@@ -1,8 +1,8 @@
 FROM ruby:2.4-alpine
 
-RUN apk add --no-cache build-base gcc bash
+RUN apk add --no-cache build-base gcc bash curl
 
-RUN gem install jekyll
+RUN gem install github-pages
 
 EXPOSE 4000
 
